@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.main_div
+{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: 'Varela Round', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center_div
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    width: 400px;
+    height: 500px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading
+{
+    background-color: rgb(155, 56, 155);
+    color: white;
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.operation
+{
+    text-align: center;
+    font-size:large;
 }
-
-.App-link {
-  color: #61dafb;
+.operation input
+{
+    text-align: center;
+    color: rgb(155, 56, 155);
+    font-family: 'Varela Round', sans-serif;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.operation input:focus
+{
+    outline: none;
+}
+.operation button
+{
+    border-radius: 20px;
+    margin-left: 10px;
+    color: rgb(155, 56, 155);
+    font-weight: bolder;
+    font-size: large;
+}
+ul
+{
+    margin-top: 5px;
+    padding-left: 85px;
+}
+li
+{
+    color: rgb(33, 121, 7);
+    font-weight: bolder;
+    font-size: large;
+}
+button
+{
+    font-size: large;
+}
+.el
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+.el button
+{
+    border-radius: 15px;
+    /* margin-right: 30px; */
+    font-size: large;
+    height: 38px;
+    width: 35px;
+}
+.el li
+{
+    margin-top: 6px;
+    margin-left: 25px;
+}
+.content
+{
+    height: 340px;
+    overflow-y: scroll;
+    padding-right: 30px;
 }
