@@ -53,7 +53,7 @@
 ul
 {
     margin-top: 5px;
-    padding-left: 85px;
+    padding-left: 30px;
 }
 li
 {
@@ -69,6 +69,10 @@ button
 {
     display: flex;
     margin-bottom: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 4px 4px 10px black;
 }
 .el button
 {
@@ -88,4 +92,5 @@ button
     height: 340px;
     overflow-y: scroll;
     padding-right: 30px;
+    /* border: 2px solid red; */
 }
