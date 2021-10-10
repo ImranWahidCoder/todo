@@ -10,10 +10,21 @@ function App() {
     const response = (event) => {
         setCurr(event.target.value)
     }
+
+    const check = (item) => {
+        for (let i = 0; i < item.length; i++) {
+            if ((item[i] >= 'a' && item[i] <= 'z') || (item[i] >= 'A' && item[i] <= 'Z')) {
+                return true
+            }
+        }
+        return false
+    }
     const add = () => {
-        setItems((oldItems) => {
-            return [...oldItems, curr]
-        })
+        if (check(curr)) {
+            setItems((oldItems) => {
+                return [...oldItems, curr]
+            })
+        }
         setCurr("")
     }
 
